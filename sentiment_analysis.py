@@ -7,13 +7,13 @@ openai.api_key=config('OPENAI_API_KEY')
 def generate_prompt(text):
     return """This is a Sentence sentiment classifier
 
-        Sentence: I loved the new Batman movie!
+        Sentence: I loved the new restaurant!
         Sentiment: Positive
         ###
-        Sentence: I hate it when my phone battery dies.
+        Sentence: This sucks. I'm bored.
         Sentiment: Negative
         ###
-        Sentence: I don't like this.
+        Sentence: I don't like how this is going.
         Sentiment: Negative
         ###
         Sentence: {}
